@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opened</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #2E8B57; /* Changed to a blue-green shade */
+            color: #fff;
+            padding: 10px 20px; /* Reduced padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 80px; /* Reduced logo size */
+            height: 80px; /* Reduced logo size */
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .profile-button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .profile-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .profile {
+            margin: 0 10px;
+            text-align: center;
+        }
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .profile p {
+            color: #333;
+            font-size: 16px;
+        }
+        .default-profile {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .default-profile img {
+            width: 50px; /* Adjust size of default profile logo */
+            height: 50px; /* Adjust size of default profile logo */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="s.jpg" alt="Magnifying Glass Logo">
+        <h1>PROCH - profile Search</h1>
+        <button class="profile-button">User Profile</button>
+        <script>
+            document.getElementById("signin-form").addEventListener("submit", function(event) {
+              event.preventDefault(); // Prevent the default form submission
+              
+              // Redirect to y.html
+              window.location.href = "y.html";
+            });
+          </script>
+    </div>
+    <div class="profile-container">
+        <div class="profile">
+            <img src="th.jpeg" alt="Profile Picture">
+            <p>User 1</p>
+        </div>
+        <div class="profile">
+            <img src="th.jpeg" alt="Profile Picture">
+            <p>User 2</p>
+        </div>
+        <div class="profile">
+            <div class="default-profile">
+                <img src="th.jpeg" alt="Profile Picture">
+            </div>
+            <p>User 3</p>
+        </div>
+    </div>
+</body>
+</html>
